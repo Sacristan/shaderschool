@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{3CBAA975-AEF4-4151-48D4-F80D7CCC91BD}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\CustomGUI\PopupMenu.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Graphs\PixelShaderGraph.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Graphs\ShaderGraph.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Graphs\SimpleLightingShaderGraph.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Graphs\SubGraph.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Graphs\SubGraphType.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Graphs\VertexShaderGraph.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Channels\Channel.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Channels\ChannelQueryResult.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Channels\ChannelReference.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Channels\Input\Float4InputChannel.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Channels\Input\InputChannel.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Channels\Input\MatrixInputChannel.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Channels\Input\Sampler2DInputChannel.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Channels\Input\SamplerCubeInputChannel.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Channels\InputChannelReference.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Channels\Output\Float4OutputChannel.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Channels\Output\MatrixOutputChannel.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Channels\Output\OutputChannel.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Channels\Output\Sampler2DOutputChannel.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Channels\Output\SamplerCubeOutputChannel.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Channels\OutputChannelReference.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Constants\Float4ConstNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Constants\FloatConstNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Constants\LumConstNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Constants\OneNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Constants\PINode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Constants\RPINode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Constants\ZeroNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\ACosNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\ASinNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\ATan2Node.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\ATanNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\AbsNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\ClampNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\CosNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\CoshNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\DistanceNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\FresnelNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\FunctionOneInput.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\FunctionThreeInput.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\FunctionTwoInput.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\IFunction.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\IsFiniteNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\IsInfNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\IsNanNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\LengthNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\LerpNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\Log10Node.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\Log2Node.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\LogNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\LuminanceNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\MaskNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\MergeNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\NormalizeNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\ParallaxNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\PowNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\ReflectNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\RoundNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\SaturateNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\SinNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\SinhNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\SmoothStepNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\SplatAlphaNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\SplatNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\SplitNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\StepNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\SwizzleNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\TanNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\TanhNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\Tex2DNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\Tex2DNormalNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\TexCubeNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\TrunkNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\UVPanNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Functions\UnpackNormalNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\GraphMasterNodes\LightingOutputMasterNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\GraphMasterNodes\ShaderMasterNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\GraphMasterNodes\VertexOutputMasterNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\IResultCacheNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\CosTimeNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\FullUV1.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\FullUV2.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\GrabSampler.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\InputNodeInterfaces\IFieldInput.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\InputNodeInterfaces\IPropertyInput.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\InputNodeInterfaces\IProxyOnSave.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\InputNodeInterfaces\IStructInput.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\LightingInputNodes\LightColorNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\LightingInputNodes\LightingAlbedoNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\LightingInputNodes\LightingAlphaNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\LightingInputNodes\LightingCustomNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\LightingInputNodes\LightingEmissionNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\LightingInputNodes\LightingGlossNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\LightingInputNodes\LightingNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\LightingInputNodes\LightingNormalNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\LightingInputNodes\LightingSpecularNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\MeshUV.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\NormalizedScreenPositionNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\Object2World.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\PropertyInputNodes\ColorNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\PropertyInputNodes\Float4Node.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\PropertyInputNodes\FloatNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\PropertyInputNodes\InputNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\PropertyInputNodes\MatrixNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\PropertyInputNodes\RangeNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\PropertyInputNodes\Sampled2DNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\PropertyInputNodes\Sampler2DNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\PropertyInputNodes\SamplerCubeNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\PropertyInputNodes\SimpleSampler2DNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\ScreenDepthDifferenceNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\ScreenDepthNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\ScreenPositionNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\SimpleWorldReflectionNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\SinTimeNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\TimeNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\VertexColorNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\VertexInputNodes\VertexInColorNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\VertexInputNodes\VertexNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\VertexInputNodes\VertexNormalNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\VertexInputNodes\VertexPositionNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\VertexInputNodes\VertexTangentNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\VertexInputNodes\VertexUV2Node.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\VertexInputNodes\VertexUVNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\ViewDirectionNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\World2Object.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\WorldNormalNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\WorldPositionNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\InputNodes\WorldReflectionNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Node.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\NodeMetaData.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\NodeState.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\AddNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\AllNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\AnyNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\CeilNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\CrossNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\DegreesNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\DivideNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\DotNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\Exp2Node.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\ExpNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\FloorNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\FracNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\MaxNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\MinNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\MinusXNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\MultiplyNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\MxMNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\MxVNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\OneMinusNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\Operation.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\RSqrtNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\RadiansNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\ReferenceCrossNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\SignNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\SqrtNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\SubtractNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\Operations\VxMNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\PureComment.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Nodes\RootNode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Properties\ColorProperty.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Properties\DefaultTextureType.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Properties\Float4Property.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Properties\FloatProperty.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Properties\MatrixProperty.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Properties\RangeProperty.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Properties\ShaderInputs.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Properties\ShaderProperty.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Properties\Texture2DProperty.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Properties\TextureCubeProperty.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Settings\BlendingMode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Settings\BlendingType.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Settings\CullMode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Settings\ExcludePath.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Settings\FogMode.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Settings\Queue.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Settings\RenderType.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Settings\ShaderSettings.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Settings\ShaderTarget.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Settings\ZTest.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Settings\ZWrite.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Types\EditorBool.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Types\EditorColor.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Types\EditorFloat.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Types\EditorFloat2.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Types\EditorFloat3.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Types\EditorFloat4.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Types\EditorGroup.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Types\EditorInt.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Types\EditorLabel.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Types\EditorMatrix.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Types\EditorRange.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Types\EditorRect.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Types\EditorString.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Types\IUnityeditorDrawableType.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Graph\Types\TypeEnum.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\GraphEditor\CircularReferenceException.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\GraphEditor\EditorExtensions.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\GraphEditor\InstructionCounter.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\GraphEditor\NodeDrawer.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\GraphEditor\NodeEditor.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\GraphEditor\PreviewRenderer.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\GraphEditor\PreviewWindowInternal.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Scripts\NodeEditorWindow.cs" />
+     <Compile Include="Assets\StrumpyShaderEditor\Editor\Scripts\StrumpyPreviewWindow.cs" />
+     <None Include="Assets\_PrimeShaderTuts\4\ShaderusDualTextureWipe.shader" />
+     <None Include="Assets\_PrimeShaderTuts\6\VertexLitSpecular.shader" />
+     <None Include="Assets\Shared\Sac.cginc" />
+     <None Include="Assets\_PrimeShaderTuts\5\VertexLit.shader" />
+     <None Include="Assets\_PrimeShaderTuts\3\ShaderusTwoSidedTex.shader" />
+     <None Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal\Temp\TempShader.shader" />
+     <None Include="Assets\_PrimeShaderTuts\2\BlueColor.shader" />
+     <None Include="Assets\_PrimeShaderTuts\2\Shaderus2.shader" />
+     <None Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal\TextureCopy.shader" />
+     <None Include="Assets\_StrumpyShaderEditorTuts\1\MyDiffuseBump.shader" />
+     <None Include="Assets\_PrimeShaderTuts\3\ShaderusOneSidedTex.shader" />
+     <None Include="Assets\_PrimeShaderTuts\1\Shaderus.shader" />
+     <None Include="Assets\_PrimeShaderTuts\4\ShaderusDualTextureMix.shader" />
+     <None Include="Assets\_PrimeShaderTuts\4\ShaderusOneSidedTexDistortion.shader" />
+ <Reference Include="System.Runtime.Serialization">
+ <HintPath>Assets\StrumpyShaderEditor\Editor\System.Runtime.Serialization.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>C:\Program Files (x86)\Unity\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>C:\Program Files (x86)\Unity\Editor\Data\PlaybackEngines\iPhonePlayer\EditorExtensions\UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WP8.Extensions">
+ <HintPath>C:\Program Files (x86)\Unity\Editor\Data\PlaybackEngines\WP8Support\EditorExtensions\UnityEditor.WP8.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Metro.Extensions">
+ <HintPath>C:\Program Files (x86)\Unity\Editor\Data\PlaybackEngines\MetroSupport\EditorExtensions\UnityEditor.Metro.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.BB10.Extensions">
+ <HintPath>C:\Program Files (x86)\Unity\Editor\Data\PlaybackEngines\BB10Player\EditorExtensions\UnityEditor.BB10.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>C:\Program Files (x86)\Unity\Editor\Data\PlaybackEngines\AndroidPlayer\EditorExtensions\UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-vs.csproj">
+      <Project>{A6B60CD8-D011-83C7-C8D1-38782754DC83}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
