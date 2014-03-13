@@ -54,6 +54,7 @@
      <None Include="Assets\_PrimeShaderTuts\3\ShaderusTwoSidedTex.shader" />
      <None Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal\Temp\TempShader.shader" />
      <None Include="Assets\_PrimeShaderTuts\2\BlueColor.shader" />
+     <None Include="Assets\_StrumpyShaderEditorTuts\2\MySpec.shader" />
      <None Include="Assets\_PrimeShaderTuts\2\Shaderus2.shader" />
      <None Include="Assets\StrumpyShaderEditor\Editor\Resources\Internal\TextureCopy.shader" />
      <None Include="Assets\_StrumpyShaderEditorTuts\1\MyDiffuseBump.shader" />
