@@ -1,4 +1,4 @@
-Shader "MyDiffuseBump"
+Shader "My/MyDiffuseBump"
 {
 	Properties 
 	{
@@ -104,17 +104,17 @@ float4 VertexOutputMaster0_3_NoInput = float4(0,0,0,0);
 				o.Custom = 0.0;
 				
 float4 Tex2D0=tex2D(_Diffuse,(IN.uv_Diffuse.xyxy).xy);
-float4 Multiply0=_MainColor * Tex2D0;
+float4 Multiply1=_MainColor * Tex2D0;
 float4 Tex2DNormal0=float4(UnpackNormal( tex2D(_Normal,(IN.uv_Normal.xyxy).xy)).xyz, 1.0 );
-float4 Multiply1=_SpecularColor * _Shininess.xxxx;
+float4 Multiply0=_SpecularColor * _Shininess.xxxx;
 float4 Master0_2_NoInput = float4(0,0,0,0);
 float4 Master0_5_NoInput = float4(1,1,1,1);
 float4 Master0_7_NoInput = float4(0,0,0,0);
 float4 Master0_6_NoInput = float4(1,1,1,1);
-o.Albedo = Multiply0;
+o.Albedo = Multiply1;
 o.Normal = Tex2DNormal0;
-o.Specular = Multiply1;
-o.Gloss = Multiply1;
+o.Specular = Multiply0;
+o.Gloss = Multiply0;
 
 				o.Normal = normalize(o.Normal);
 			}
