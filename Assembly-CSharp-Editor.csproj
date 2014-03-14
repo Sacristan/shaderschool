@@ -267,6 +267,7 @@
      <None Include="Assets\_PrimeShaderTuts\1\Shaderus.shader" />
      <None Include="Assets\_PrimeShaderTuts\4\ShaderusDualTextureMix.shader" />
      <None Include="Assets\_PrimeShaderTuts\4\ShaderusOneSidedTexDistortion.shader" />
+     <None Include="Assets\_StrumpyShaderEditorTuts\3Glass\GlassShader.shader" />
  <Reference Include="System.Runtime.Serialization">
  <HintPath>Assets\StrumpyShaderEditor\Editor\System.Runtime.Serialization.dll</HintPath>
  </Reference>
