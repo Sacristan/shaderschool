@@ -3,8 +3,6 @@ Shader "My/GlassShader"
 	Properties 
 	{
 _MainColor("_MainColor", Color) = (1,1,1,1)
-_SpecularColor("_SpecularColor", Color) = (1,1,1,1)
-_Shininess("_Shininess", Range(0,1) ) = 0.5
 _TransparentTexture("_TransparentTexture", 2D) = "black" {}
 _Transparency("_Transparency", Range(0,1) ) = 0.5
 _ReflectiveMap("_ReflectiveMap", Cube) = "black" {}
@@ -37,8 +35,6 @@ Fog{
 
 
 float4 _MainColor;
-float4 _SpecularColor;
-float _Shininess;
 sampler2D _TransparentTexture;
 float _Transparency;
 samplerCUBE _ReflectiveMap;
@@ -113,15 +109,14 @@ float4 Multiply0=_MainColor * Tex2D0;
 float4 TexCUBE0=texCUBE(_ReflectiveMap,float4( IN.simpleWorldRefl.x, IN.simpleWorldRefl.y,IN.simpleWorldRefl.z,1.0 ));
 float4 Multiply3=_ReflectiveAmount.xxxx * TexCUBE0;
 float4 Add0=Multiply0 + Multiply3;
-float4 Multiply2=_SpecularColor * _Shininess.xxxx;
 float4 Multiply1=Tex2D0.aaaa * _Transparency.xxxx;
 float4 Master0_1_NoInput = float4(0,0,1,1);
 float4 Master0_2_NoInput = float4(0,0,0,0);
+float4 Master0_3_NoInput = float4(0,0,0,0);
+float4 Master0_4_NoInput = float4(0,0,0,0);
 float4 Master0_7_NoInput = float4(0,0,0,0);
 float4 Master0_6_NoInput = float4(1,1,1,1);
 o.Albedo = Add0;
-o.Specular = Multiply2;
-o.Gloss = Multiply2;
 o.Alpha = Multiply1;
 
 				o.Normal = normalize(o.Normal);
